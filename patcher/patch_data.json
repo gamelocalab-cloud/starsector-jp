@@ -2,7 +2,7 @@
  "api": {
   "file_name": "starfarer.api.jar",
   "orig_sha256": "a7ba18f3476ffe704729bd0a7a47443f035fea98a32ac2930eae8b391d013c2a",
-  "patched_sha256": "c92758dc82b0efc379fbb81df191c64d3ff2d2e02d998229e1c286f19f4109b8",
+  "patched_sha256": "e8a255083758dd3fa5e559bb8ec9a9fc54289cf8378b1c5f430697743591455d",
   "classes": {
    "com/fs/starfarer/api/campaign/FleetAssignment.class": {
     "Delivering resources to": "資源を輸送中",
@@ -395,7 +395,21 @@
     "hyperspace": "ハイパースペース",
     "fleet": "艦隊",
     "ship": "艦",
-    "fighter wing": "戦闘機編隊"
+    "fighter wing": "戦闘機編隊",
+    "his": "彼の",
+    "His": "彼の",
+    "him": "彼",
+    "Him": "彼",
+    "he": "彼",
+    "He": "彼",
+    "her": "彼女",
+    "Her": "彼女",
+    "she": "彼女",
+    "She": "彼女",
+    "himself": "彼自身",
+    "Himself": "彼自身",
+    "herself": "彼女自身",
+    "Herself": "彼女自身"
    },
    "com/fs/starfarer/api/impl/campaign/CoreScript.class": {
     " World": " ワールド",
@@ -1868,7 +1882,9 @@
     "type: ": "種別: ",
     "The bounty posting also contains partial intel on some of the ships under ": "懸賞金の告知には、次の指揮下にある艦の一部に関する部分的情報も含まれている： ",
     "The intel assessment notes the fleet may contain upwards of %s other ships of lesser significance.": "情報評価には、その艦隊には他にも重要度の低い艦が最大で%s隻含まれている可能性があると記されている。",
-    "The intel assessment notes the fleet may contain several other ships of lesser significance.": "情報評価には、その艦隊には他にも重要度の低い艦が数隻含まれている可能性があると記されている。"
+    "The intel assessment notes the fleet may contain several other ships of lesser significance.": "情報評価には、その艦隊には他にも重要度の低い艦が数隻含まれている可能性があると記されている。",
+    "her": "彼女",
+    "his": "彼の"
    },
    "com/fs/starfarer/api/impl/campaign/intel/ProcurementMissionIntel.class": {
     "Show commodity info": "商品情報を表示",
@@ -7362,13 +7378,22 @@
     "fairly capable": "かなり有能",
     "fairly strong": "かなり強力",
     "very strong": "非常に強い"
+   },
+   "com/fs/starfarer/api/impl/campaign/intel/bar/events/BaseBarEventWithPerson.class": {
+    "he": "彼",
+    "she": "彼女",
+    "him": "彼",
+    "her": "彼女",
+    "himself": "彼自身",
+    "herself": "彼女自身",
+    "his": "彼の"
    }
   }
  },
  "obf": {
   "file_name": "starfarer_obfuscated.jar",
   "orig_sha256": "5dd222b9e266d2ac2d63b3dad4983eb05caaf5a247d7dfb82aaeba47ea774cc8",
-  "patched_sha256": "2c7f4fd9c4384cd9b4b8e0ff39270d3b0fa04eca3d49c6d756d6fcf9ea01bd0a",
+  "patched_sha256": "741fc64f569cb9e12b12b9eb53da9d22d8c308a501e3c481eb0d47e71529adbf",
   "classes": {
    "com/fs/starfarer/StarfarerLauncher.class": {
     "Max memory: ": "最大メモリ: ",
@@ -9854,7 +9879,8 @@
     "Your name:": "あなたの名前:",
     "Confirm": "確認",
     "Cancel": "キャンセル",
-    "Generate name": "名前を生成"
+    "Generate name": "名前を生成",
+    "Name:": "名前："
    },
    "com/fs/starfarer/coreui/O0oo$2.class": {
     "out of supplies": "補給物資切れ",
@@ -11963,7 +11989,9 @@
     "Accept": "受諾"
    },
    "com/fs/starfarer/ui/newui/nullsuper.class": {
-    "None": "なし"
+    "None": "なし",
+    "Name:": "名前：",
+    "Rank:": "階級："
    },
    "com/fs/starfarer/ui/newui/o0Oo$o.class": {
     "CUSTOM": "カスタム"
@@ -12006,6 +12034,13 @@
    },
    "com/fs/starfarer/util/O0OO.class": {
     "Numbers must be in range 1-3999": "数値は1～3999の範囲でなければならない"
+   },
+   "com/fs/starfarer/rpg/Person.class": {
+    "him": "彼",
+    "her": "彼女",
+    "his": "彼の",
+    "he": "彼",
+    "she": "彼女"
    }
   }
  }
